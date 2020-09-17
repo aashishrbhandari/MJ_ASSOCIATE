@@ -2,9 +2,9 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/** Done So that the Other Content are not overlapped due to Navbar*/
+/** Done So that the Other Content are not overlapped due to Navbar [To be Fixed] */
 .navbar-component {
-    padding-bottom: 100px;
+    padding-bottom: 75px;
 }
 
 .useful-link-list li,
@@ -20,4 +20,18 @@ footer .contact-details-list .list-group-item {
 .navbar-nav > li:hover{
     font-weight:bold;
     border-bottom: solid 3px black;
+}
+
+/** Removing Extra Spaces in NavBar */
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 0;
+}
+
+/** Removing Extra Spaces in NavBar */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
 }
