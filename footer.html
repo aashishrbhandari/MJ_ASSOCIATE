@@ -1,28 +1,34 @@
 <footer class="bd-footer p-md-5 mt-5 bg-light text-center text-sm-left">
+
     <div class="container">
-        <div class="card-group">
-            <div class="card">
-                <div class="card-header bg-transparent">
-                    <h5>Useful Links</h5>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Useful Links</h5>
+                    </div>
+                    <ul class="list-group list-group-flush useful-link-list">
+                        <li class="list-group-item list-group-item-action">Supreme Court of India</li>
+                        <li class="list-group-item list-group-item-action">Bombay High Court</li>
+                        <li class="list-group-item list-group-item-action">Passport link</li>
+                        <li class="list-group-item list-group-item-action">National Consumer Helpline</li>
+                        <li class="list-group-item list-group-item-action">Ministry of Company Affairs</li>
+                        <li class="list-group-item list-group-item-action">RERA</li>
+                    </ul>
                 </div>
-                <ul class="list-group list-group-flush useful-link-list">
-                    <li class="list-group-item list-group-item-action">Supreme Court of India</li>
-                    <li class="list-group-item list-group-item-action">Bombay High Court</li>
-                    <li class="list-group-item list-group-item-action">Passport link</li>
-                    <li class="list-group-item list-group-item-action">National Consumer Helpline</li>
-                    <li class="list-group-item list-group-item-action">Ministry of Company Affairs</li>
-                    <li class="list-group-item list-group-item-action">RERA</li>
-                </ul>
             </div>
-            <div class="card">
-                <div class="card-header bg-transparent">
-                    <h5>Contact Us</h5>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush contact-details-list">
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <h5>Contact Us</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div>
-                                <img src="/images/icons/office-building.png" width="30" height="30">
+                                <img src="/images/svg-icons/house.svg" alt="" width="32" height="32" title="Office">
                                 <strong>Office:</strong>
                             </div>
                             <p>
@@ -33,70 +39,74 @@
                         </li>
                         <li class="list-group-item">
                             <div>
-                                <img src="/images/icons/phone.png" width="30" height="30">
+                                <img src="/images/svg-icons/phone.svg" alt="" width="32" height="32" title="Phone">
                                 <strong>PH No.:</strong>
                             </div>
-                            <ul class="list-group list-group-flush contact-details-list">
+                            <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    +91 9773264217
+                                    (+91) 9773264217
                                 </li>
                                 <li class="list-group-item">
-                                    +91 9167149912
+                                    (+91) 9167149912
                                 </li>
                                 <li class="list-group-item">
-                                    +91 9321459010
+                                    (+91) 9321459010
                                 </li>
                             </ul>
                         </li>
                         <li class="list-group-item">
                             <div>
-                                <img src="/images/icons/" width="30" height="30">
+                                <img src="/images/svg-icons/email.svg" alt="" width="32" height="32" title="Email">
                                 <strong>Email.:</strong>
                             </div>
                             <p>
-                                Mjassociate19@gmail.com
+                                <a class="mail" href="mailto:mjassociate19@gmail.com">Mjassociate19@gmail.com</a>
+
                             </p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header bg-transparent">
-                    <h5>Map</h5>
-                </div>
-                <div class="card-body">
-                    To be Added Soon
-                    <!--
-                        <div class="mapouter">
-                            <div class="gmap_canvas"><iframe id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                                </iframe>
-                            </div>
-                        </div>
-                        -->
+
+            <div class="col-sm-5">
+                <div class="card google-maps-card">
+                    <div class="card-header bg-transparent">
+                        <h5>We Are Located Here</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.474082457957!2d72.83667598606178!3d18.949338657892362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce25d4afe2ad%3A0xf18081029a9772d0!2sKachwala%20Building%2C%20Kazi%20Syed%20St%2C%20Bangalipura%2C%20Koliwada%2C%20Masjid%20Bandar%20West%2C%20Masjid%20Bandar%2C%20Mumbai%2C%20Maharashtra%20400003!5e0!3m2!1sen!2sin!4v1600318832677!5m2!1sen!2sin"
+                            class="google-maps-iframe">
+                        </iframe>
+
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="attentionModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Attention</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Hello All
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Accept</button>
-                    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="attentionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Attention</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Hello All
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Accept</button>
                 </div>
             </div>
         </div>
+    </div>
 
 </footer>
