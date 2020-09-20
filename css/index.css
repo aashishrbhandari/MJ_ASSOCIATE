@@ -26,6 +26,11 @@ body {
     padding-bottom: 0;
 }
 
+
+.image-slider-component {
+    height: 40%;
+}
+
 /** Might Like 
 .navbar a {
     border: solid 1px black;
@@ -43,6 +48,12 @@ body {
     /* border-bottom: solid 2px black;*/
 }
 
+
+/*** Sub DropDown Menu 
+.sub-dropdown-menu:hover .sub-dropdown-menu-list {
+    display: block;
+}
+*/
 
 /** Footer Card Same BG Color */
 footer .card {
@@ -65,8 +76,6 @@ footer .useful-links-card ul li a{
   text-decoration: none;
 }
 
-
-
 /** Show Google Maps */
 .google-maps-iframe {
     width: 100%;
@@ -78,28 +87,104 @@ footer .useful-links-card ul li a{
 }
 
 
-
-/*** WhatsApp */
-
-.whats-app {
-    position: fixed;
-    width: 60px;
+/*** WhatsApp Button ***/
+.whatsapp-float-btn {
+    position: fixed; /* Very Crucial */
+    width: 240px;
     height: 60px;
+    left: 18px; 
     bottom: 40px;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    right: 18px;
-    background-image: url("/images/icons/whatsapp-orig-4.png");
+    z-index: 3;
+    display: flex; /* Make It FlexBox */
 }
 
-.whats-app:hover {
+.whatsapp-float-btn-icon {
+    height: 64px;
+    width: 64px;
+    bottom: 36px;
+    border-radius: 50%;
+    background-image: url(/images/icons/whatsapp_circle_outer_64_64.png);
+}
+
+.whatsapp-float-btn-icon:hover {
+    background-image: url(/images/icons/whatsapp_circle_inner_64_64.png);
+}
+
+.whatsapp-float-btn-text {
+    padding-left: 6px;
+    font-size: 16px;
     color: #000000;
 }
 
-.whatsapp-float-btn {
-    margin-top: 16px;
+/** Table */
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: left;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        background-color: #000000;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+
+    table tbody tr td:first-child {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
 }

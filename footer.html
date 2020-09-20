@@ -11,12 +11,12 @@
                     </div>
                     <ul class="list-group list-group-flush useful-link-list">
                         <li class="list-group-item list-group-item-action">
-                            <a href="https://bombayhighcourt.nic.in/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://main.sci.gov.in/" target="_blank" rel="noopener noreferrer">
                                 Supreme Court of India
                             </a>
                         </li>
                         <li class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
-                            <a href="https://main.sci.gov.in/">
+                            <a href="https://bombayhighcourt.nic.in/">
                                 Bombay High Court
                             </a>
                         </li>
@@ -116,21 +116,82 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="attentionModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
+    <div class="modal fade disclaimer-modal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Attention</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title">
+                        <strong>Disclaimer</strong>
+                    </h5>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"
+                        onclick="window.location.href='https://www.google.com'">
+                        Close
+                    </button>
+
+                    <!--
+                    <button type="button" class="close" data-dismiss="modal"
+                        onclick="window.location.href='https://www.google.com'">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    -->
                 </div>
                 <div class="modal-body">
-                    Hello All
+                    <div class="card mb-3 intro-card">
+                        All the information, publications and legal commentary provided on www.mjassociate.co.in is for
+                        illustrative purposes only and should not be regarded or relied upon as legal advice. While the
+                        content provided is accurate as at the date of first publication, laws and regulations change
+                        frequently. Any reliance on the information contained on www.mjassociate.co.in is solely at the
+                        user's own risk. <br>
+                        Specific legal advice should always be obtained before acting upon any information or commentary
+                        provided on the site. Further, the recipients of content from the site should not act, or
+                        refrain from acting, based upon any or all of the contents on the site.
+                        <br>
+                        The site is not intended to be a source of advertising or solicitation. By visiting this site,
+                        you acknowledge
+                        that you
+                        are doing so voluntarily and of your own free will. You should not consider the information on
+                        the
+                        site to be an invitation for a lawyer-client relationship, and transmission, receipt or use of
+                        the
+                        site does not constitute or create a lawyer-client relationship. All site contents are the
+                        copyright
+                        of MJ & Associates (Advocates & Consultants) Law Firm.
+                        <br>
+
+                        As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise
+                        through website except as permitted under the aforesaid rules. <br>
+                        The information provided under this website is solely available for informational purposes only
+                        and should not be interpreted as soliciting or advertisement. <br>
+                        By accessing the website, you hereby acknowledge the following:
+                        <br>
+                        That you have requested for the access to the website to gain more information about us for your
+                        information and use; There has been no advertisement, personal communication, solicitation,
+                        invitation or inducement of any sort whatsoever from us or any of our members to solicit any
+                        work through this website; <br>
+                        The information about us is provided to the user only on request and any information obtained or
+                        materials downloaded from this website and any transmission, receipt or use of this site would
+                        not create any lawyer-client relationship. Neither this website nor the web
+                        pages and the information contained herein constitute a contract, or will form the basis of a
+                        contract; No
+                        liability can arise for any action taken by the user relying on the material/ information
+                        provided
+                        under this website; <br>
+                        In cases where the user has any legal issues, he/she in all cases must seek independent legal
+                        advice, as the materials contained in this website does not constitute/substitute professional
+                        advice that may be required before acting on any matter; You hereby agree to the Privacy Policy
+                        of the firm.
+                    </div>
                 </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Accept</button>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            On Close/Decline You will be Redirected to Google.com
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Accept</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"
+                        onclick="window.location.href='https://www.google.com'">Decline</button>
                 </div>
             </div>
         </div>
