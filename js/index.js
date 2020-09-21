@@ -29,7 +29,7 @@ async function load_footer() {
         console.log("Visited No Need to Show Modal!!")
     } else {
         disclaimer_modal_section.show();
-        localStorage.setItem("Visited", "True")
+        //localStorage.setItem("Visited", "True") [Wrong]
     }
 
 }

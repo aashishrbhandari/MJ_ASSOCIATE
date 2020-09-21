@@ -189,7 +189,8 @@
                             On Close/Decline You will be Redirected to Google.com
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Accept</button>
+                    <button type="button" class="btn btn-outline-primary disclaimer-modal-accept"
+                        onclick="localStorage.setItem('Visited', 'True')" data-dismiss="modal">Accept</button>
                     <button type="button" class="btn btn-outline-danger" data-dismiss="modal"
                         onclick="window.location.href='https://www.google.com'">Decline</button>
                 </div>
