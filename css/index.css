@@ -48,13 +48,6 @@ body {
     /* border-bottom: solid 2px black;*/
 }
 
-
-/*** Sub DropDown Menu 
-.sub-dropdown-menu:hover .sub-dropdown-menu-list {
-    display: block;
-}
-*/
-
 /** Footer Card Same BG Color */
 footer .card {
     background-color: #f8f9fa!important;
