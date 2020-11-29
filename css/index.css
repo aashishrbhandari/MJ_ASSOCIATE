@@ -135,7 +135,7 @@ table th {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     table {
         border: 0;
     }
@@ -181,3 +181,39 @@ table th {
         border-bottom: 0;
     }
 }
+
+
+/** New added ***/
+
+.card-title {
+    font-weight: 700!important;
+}
+
+/*****/
+
+
+/** Extra Animation **/
+
+.intro-small-cards .card {
+    transition: all 0.6s ease;
+}
+
+.intro-small-cards .card:hover {
+    transform: translateY(-3%);
+}
+
+.whatsapp-float-btn, .whatsapp-float-btn * {
+    transition: all 0.6s ease;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.whatsapp-float-btn {
+    animation: bounce 1.6s infinite;
+}
+
+/****/
