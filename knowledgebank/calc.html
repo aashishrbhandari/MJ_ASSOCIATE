@@ -39,24 +39,440 @@
     <!-- Main Center Content -->
     <div class="main-content container">
 
-        <div class="card mb-3 intro-card">
-            <div class="card-header">
-                <center>
-                    <h1>About Us</h1>
-                </center>
-            </div>
-            <div>
-                <!-- Table -->
-            </div>
-            <div class="card-footer">
-                <!-- <a href="#" class="btn btn-dark">Learn More About Us</a> -->
+        <div class="card mb-3">
+            <div class="card-header text-center">
+                <h1>BOMBAY COURT FEES CALCULATOR</h1>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-sm-6 h-100">
+                <div class="card border-none">
+                    <div class="card-body">
+                        <h5 class="card-title">OverView</h5>
+                        <p class="card-text">
+                            From claim value Rs 1,00,000 onward the fees increase @ Rs 200 for every Rs 10,000 or part thereof upto Rs 11,00,000 and over Rs. 11,00,000 @ Rs 1,200 for every Rs 1,00,000 or part thereof upto a maximum fee of Rs 3,00,000. Select the claim value of the subject matter to see the proper fee leviable on the institution of suits, etc.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 h-100">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Compute The Fees below:</h5>
+                        
+                        <select class="b-court-claim-range form-select">
+                            <option value="0" selected="">Select the Total Claim Value</option>
+                            <option value="200.00">0000 - 1000</option>
+                            <option value="212.00">1000 - 1100</option>
+                            <option value="224.00">1100 - 1200</option>
+                            <option value="236.00">1200 - 1300</option>
+                            <option value="248.00">1300 - 1400</option>
+                            <option value="260.00">1400 - 1500</option>
+                            <option value="272.00">1500 - 1600</option>
+                            <option value="280.00">1600 - 1700</option>
+                            <option value="296.00">1700 - 1800</option>
+                            <option value="308.00">1800 - 1900</option>
+                            <option value="320.00">1900 - 2000</option>
+                            <option value="332.00">2000 - 2100</option>
+                            <option value="344.00">2100 - 2200</option>
+                            <option value="356.00">2200 - 2300</option>
+                            <option value="368.00">2300 - 2400</option>
+                            <option value="380.00">2400 - 2500</option>
+                            <option value="392.00">2500 - 2600</option>
+                            <option value="404.00">2600 - 2700</option>
+                            <option value="416.00">2700 - 2800</option>
+                            <option value="428.00">2800 - 2900</option>
+                            <option value="440.00">2900 - 3000</option>
+                            <option value="452.00">3000 - 3100</option>
+                            <option value="464.00">3100 - 3200</option>
+                            <option value="476.00">3200 - 3300</option>
+                            <option value="488.00">3300 - 3400</option>
+                            <option value="500.00">3400 - 3500</option>
+                            <option value="512.00">3500 - 3600</option>
+                            <option value="524.00">3600 - 3700</option>
+                            <option value="536.00">3700 - 3800</option>
+                            <option value="548.00">3800 - 3900</option>
+                            <option value="566.00">3900 - 4000</option>
+                            <option value="572.00">4000 - 4100</option>
+                            <option value="584.00">4100 - 4200</option>
+                            <option value="596.00">4200 - 4300</option>
+                            <option value="608.00">4300 - 4400</option>
+                            <option value="620.00">4400 - 4500</option>
+                            <option value="632.00">4500 - 4600</option>
+                            <option value="644.00">4600 - 4700</option>
+                            <option value="656.00">4700 - 4800</option>
+                            <option value="668.00">4800 - 4900</option>
+                            <option value="680.00">4900 - 5000</option>
+                            <option value="695.00">5000 - 5100</option>
+                            <option value="710.00">5100 - 5200</option>
+                            <option value="725.00">5200 - 5300</option>
+                            <option value="740.00">5300 - 5400</option>
+                            <option value="755.00">5400 - 5500</option>
+                            <option value="770.00">5500 - 5600</option>
+                            <option value="785.00">5600 - 5700</option>
+                            <option value="800.00">5700 - 5800</option>
+                            <option value="815.00">5800 - 5900</option>
+                            <option value="830.00">5900 - 6000</option>
+                            <option value="845.00">6000 - 6100</option>
+                            <option value="860.00">6100 - 6200</option>
+                            <option value="875.00">6200 - 6300</option>
+                            <option value="890.00">6300 - 6400</option>
+                            <option value="905.00">6400 - 6500</option>
+                            <option value="920.00">6500 - 6600</option>
+                            <option value="935.00">6600 - 6700</option>
+                            <option value="950.00">6700 - 6800</option>
+                            <option value="965.00">6800 - 6900</option>
+                            <option value="980.00">6900 - 7000</option>
+                            <option value="995.00">7000 - 7100</option>
+                            <option value="1010.00">7100 - 7200</option>
+                            <option value="1025.00">7200 - 7300</option>
+                            <option value="1040.00">7300 - 7400</option>
+                            <option value="1055.00">7400 - 7500</option>
+                            <option value="1070.00">7500 - 7600</option>
+                            <option value="1085.00">7600 - 7700</option>
+                            <option value="1100.00">7700 - 7800</option>
+                            <option value="1115.00">7800 - 7900</option>
+                            <option value="1130.00">7900 - 8000</option>
+                            <option value="1145.00">8000 - 8100</option>
+                            <option value="1160.00">8100 - 8200</option>
+                            <option value="1175.00">8200 - 8300</option>
+                            <option value="1190.00">8300 - 8400</option>
+                            <option value="1205.00">8400 - 8500</option>
+                            <option value="1220.00">8500 - 8600</option>
+                            <option value="1235.00">8600 - 8700</option>
+                            <option value="1250.00">8700 - 8800</option>
+                            <option value="1265.00">8800 - 8900</option>
+                            <option value="1280.00">8900 - 9000</option>
+                            <option value="1295.00">9000 - 9100</option>
+                            <option value="1310.00">9100 - 9200</option>
+                            <option value="1325.00">9200 - 9300</option>
+                            <option value="1340.00">9300 - 9400</option>
+                            <option value="1355.00">9400 - 9500</option>
+                            <option value="1370.00">9500 - 9600</option>
+                            <option value="1385.00">9600 - 9700</option>
+                            <option value="1400.00">9700 - 9800</option>
+                            <option value="1415.00">9800 - 9900</option>
+                            <option value="1430.00">9900 - 10000</option>
+                            <option value="1505.00">10000 - 10500</option>
+                            <option value="1580.00">10500 - 11000</option>
+                            <option value="1655.00">11000 - 11500</option>
+                            <option value="1730.00">11500 - 12000</option>
+                            <option value="1805.00">12000 - 12500</option>
+                            <option value="1880.00">12500 - 13000</option>
+                            <option value="1955.00">13000 - 13500</option>
+                            <option value="2030.00">13500 - 14000</option>
+                            <option value="2105.00">14000 - 14500</option>
+                            <option value="2180.00">14500 - 15000</option>
+                            <option value="2255.00">15000 - 15500</option>
+                            <option value="2330.00">15500 - 16000</option>
+                            <option value="2405.00">16000 - 16500</option>
+                            <option value="2480.00">16500 - 17000</option>
+                            <option value="2555.00">17000 - 17500</option>
+                            <option value="2630.00">17500 - 18000</option>
+                            <option value="2705.00">18000 - 18500</option>
+                            <option value="2780.00">18500 - 19000</option>
+                            <option value="2855.00">19000 - 19500</option> 
+                            <option value="2930.00">19500 - 20000</option>
+                            <option value="3030.00">20000 - 21000</option>
+                            <option value="3130.00">21000 - 22000</option>
+                            <option value="3230.00">22000 - 23000</option>
+                            <option value="3330.00">23000 - 24000</option>
+                            <option value="3430.00">24000 - 25000</option>
+                            <option value="3530.00">25000 - 26000</option>
+                            <option value="3630.00">26000 - 27000</option>
+                            <option value="3730.00">27000 - 28000</option>
+                            <option value="3830.00">28000 - 29000</option>
+                            <option value="3930.00">29000 - 30000</option>
+                            <option value="4030.00">30000 - 32000</option>
+                            <option value="4130.00">32000 - 34000</option>
+                            <option value="4230.00">34000 - 36000</option>
+                            <option value="4330.00">36000 - 38000</option>
+                            <option value="4430.00">38000 - 40000</option>
+                            <option value="4530.00">40000 - 42000</option>
+                            <option value="4630.00">42000 - 44000</option>
+                            <option value="4730.00">44000 - 46000</option>
+                            <option value="4830.00">46000 - 48000</option>
+                            <option value="4930.00">48000 - 50000</option>
+                            <option value="5080.00">50000 - 55000</option>
+                            <option value="5230.00">55000 - 60000</option>
+                            <option value="5380.00">60000 - 65000</option>
+                            <option value="5530.00">65000 - 70000</option>
+                            <option value="5680.00">70000 - 75000</option>
+                            <option value="5830.00">75000 - 80000</option>
+                            <option value="5980.00">80000 - 85000</option>
+                            <option value="6130.00">85000 - 90000</option>
+                            <option value="6280.00">90000 - 95000</option>
+                            <option value="6430.00">95000 - 100000</option> 
+                            <option value="6430.00">100000</option>
+                            <option value="8430.00">200000</option>
+                            <option value="10430.00">300000</option>
+                            <option value="12430.00">400000</option>
+                            <option value="14430.00">500000</option>
+                            <option value="16430.00">600000</option>
+                            <option value="18430.00">700000</option>
+                            <option value="20430.00">800000</option>
+                            <option value="22430.00">900000</option>
+                            <option value="24430.00">1000000</option>
+                            <option value="26430.00">1100000</option>
+                            <option value="27630.00">1200000</option>
+                            <option value="28830.00">1300000</option>
+                            <option value="30030.00">1400000</option>
+                            <option value="31230.00">1500000</option>
+                            <option value="32430.00">1600000</option>
+                            <option value="33630.00">1700000</option>
+                            <option value="34830.00">1800000</option>
+                            <option value="36030.00">1900000</option>
+                            <option value="37230.00">2000000</option>
+                            <option value="38430.00">2100000</option>
+                            <option value="39630.00">2200000</option>
+                            <option value="40830.00">2300000</option>
+                            <option value="42030.00">2400000</option>
+                            <option value="43230.00">2500000</option>
+                            <option value="44430.00">2600000</option>
+                            <option value="45630.00">2700000</option>
+                            <option value="46830.00">2800000</option>
+                            <option value="48030.00">2900000</option>
+                            <option value="49230.00">3000000</option>
+                            <option value="50430.00">3100000</option>
+                            <option value="51630.00">3200000</option>
+                            <option value="52830.00">3300000</option>
+                            <option value="54030.00">3400000</option>
+                            <option value="55230.00">3500000</option>
+                            <option value="56430.00">3600000</option>
+                            <option value="57630.00">3700000</option>
+                            <option value="58830.00">3800000</option>
+                            <option value="60030.00">3900000</option>
+                            <option value="61230.00">4000000</option>
+                            <option value="62430.00">4100000</option>
+                            <option value="63630.00">4200000</option>
+                            <option value="64830.00">4300000</option>
+                            <option value="66030.00">4400000</option>
+                            <option value="67230.00">4500000</option>
+                            <option value="68430.00">4600000</option>
+                            <option value="69630.00">4700000</option>
+                            <option value="70830.00">4800000</option>
+                            <option value="72030.00">4900000</option>
+                            <option value="73230.00">5000000</option>
+                            <option value="74430.00">5100000</option>
+                            <option value="75630.00">5200000</option>
+                            <option value="76830.00">5300000</option>
+                            <option value="78030.00">5400000</option>
+                            <option value="79230.00">5500000</option>
+                            <option value="80430.00">5600000</option>
+                            <option value="81630.00">5700000</option>
+                            <option value="82830.00">5800000</option>
+                            <option value="84030.00">5900000</option>
+                            <option value="85230.00">6000000</option>
+                            <option value="86430.00">6100000</option>
+                            <option value="87630.00">6200000</option>
+                            <option value="88830.00">6300000</option>
+                            <option value="90030.00">6400000</option>
+                            <option value="91230.00">6500000</option>
+                            <option value="92430.00">6600000</option>
+                            <option value="93630.00">6700000</option>
+                            <option value="94830.00">6800000</option>
+                            <option value="96030.00">6900000</option>
+                            <option value="97230.00">7000000</option>
+                            <option value="98430.00">7100000</option>
+                            <option value="99630.00">7200000</option>
+                            <option value="100830.00">7300000</option>
+                            <option value="102030.00">7400000</option>
+                            <option value="103230.00">7500000</option>
+                            <option value="104430.00">7600000</option>
+                            <option value="105630.00">7700000</option>
+                            <option value="106830.00">7800000</option>
+                            <option value="108030.00">7900000</option>
+                            <option value="109230.00">8000000</option>
+                            <option value="110430.00">8100000</option>
+                            <option value="111630.00">8200000</option>
+                            <option value="112830.00">8300000</option>
+                            <option value="114030.00">8400000</option>
+                            <option value="115230.00">8500000</option>
+                            <option value="116430.00">8600000</option>
+                            <option value="117630.00">8700000</option>
+                            <option value="118830.00">8800000</option>
+                            <option value="120030.00">8900000</option>
+                            <option value="121230.00">9000000</option>
+                            <option value="122430.00">9100000</option>
+                            <option value="123630.00">9200000</option>
+                            <option value="124830.00">9300000</option>
+                            <option value="126030.00">9400000</option>
+                            <option value="127230.00">9500000</option>
+                            <option value="128430.00">9600000</option>
+                            <option value="129630.00">9700000</option>
+                            <option value="130830.00">9800000</option>
+                            <option value="132030.00">9900000</option>
+                            <option value="133230.00">10000000</option>
+                            <option value="134430.00">10100000</option>
+                            <option value="135630.00">10200000</option>
+                            <option value="136830.00">10300000</option>                                             
+                            <option value="138030.00">10400000</option>
+                            <option value="139230.00">10500000</option>
+                            <option value="140430.00">10600000</option>
+                            <option value="141630.00">10700000</option>
+                            <option value="142830.00">10800000</option>                                              
+                            <option value="144030.00">10900000</option>
+                            <option value="145230.00">11000000</option>
+                            <option value="146430.00">11100000</option>
+                            <option value="147630.00">11200000</option>                                             
+                            <option value="148830.00">11300000</option>
+                            <option value="150030.00">11400000</option>
+                            <option value="151230.00">11500000</option>
+                            <option value="152430.00">11600000</option>
+                            <option value="153630.00">11700000</option>                                              
+                            <option value="154830.00">11800000</option>                                              
+                            <option value="156030.00">11900000</option>
+                            <option value="157230.00">12000000</option>
+                            <option value="158430.00">12100000</option>                                             
+                            <option value="159630.00">12200000</option>
+                            <option value="160830.00">12300000</option>
+                            <option value="162030.00">12400000</option>
+                            <option value="163230.00">12500000</option>
+                            <option value="164430.00">12600000</option>                                              
+                            <option value="165630.00">12700000</option>                                              
+                            <option value="166830.00">12800000</option>
+                            <option value="168030.00">12900000</option>
+                            <option value="169230.00">13000000</option>                                             
+                            <option value="170430.00">13100000</option>
+                            <option value="171630.00">13200000</option>
+                            <option value="172830.00">13300000</option>
+                            <option value="174030.00">13400000</option>
+                            <option value="175230.00">13500000</option>                                              
+                            <option value="176430.00">13600000</option>                                              
+                            <option value="177630.00">13700000</option>
+                            <option value="178830.00">13800000</option>
+                            <option value="180030.00">13900000</option>                                             
+                            <option value="181230.00">14000000</option>
+                            <option value="182430.00">14100000</option>
+                            <option value="183630.00">14200000</option>
+                            <option value="184830.00">14300000</option>
+                            <option value="186030.00">14400000</option>                                              
+                            <option value="187230.00">14500000</option>                                              
+                            <option value="188430.00">14600000</option>
+                            <option value="189630.00">14700000</option>
+                            <option value="190830.00">14800000</option>                                             
+                            <option value="192030.00">14900000</option>
+                            <option value="193230.00">15000000</option>
+                            <option value="194430.00">15100000</option>
+                            <option value="195630.00">15200000</option>
+                            <option value="196830.00">15300000</option>                                              
+                            <option value="198030.00">15400000</option>                                              
+                            <option value="199230.00">15500000</option>
+                            <option value="200430.00">15600000</option>
+                            <option value="201630.00">15700000</option>                                             
+                            <option value="202830.00">15800000</option>
+                            <option value="204030.00">15900000</option>
+                            <option value="205230.00">16000000</option>
+                            <option value="206430.00">16100000</option>
+                            <option value="207630.00">16200000</option>                                              
+                            <option value="208830.00">16300000</option>                                              
+                            <option value="210030.00">16400000</option>
+                            <option value="211230.00">16500000</option>
+                            <option value="212430.00">16600000</option>                                             
+                            <option value="213630.00">16700000</option>
+                            <option value="214830.00">16800000</option>
+                            <option value="216030.00">16900000</option>
+                            <option value="217230.00">17000000</option>
+                            <option value="218430.00">17100000</option>                                              
+                            <option value="219630.00">17200000</option>                                              
+                            <option value="220830.00">17300000</option>
+                            <option value="222030.00">17400000</option>
+                            <option value="223230.00">17500000</option>
+                            <option value="224430.00">17600000</option>                                             
+                            <option value="225630.00">17700000</option>
+                            <option value="226830.00">17800000</option>
+                            <option value="228030.00">17900000</option>
+                            <option value="229230.00">18000000</option>
+                            <option value="230430.00">18100000</option>                                              
+                            <option value="231630.00">18200000</option>
+                            <option value="232830.00">18300000</option>
+                            <option value="234030.00">18400000</option>
+                            <option value="235230.00">18500000</option>                                             
+                            <option value="236430.00">18600000</option>
+                            <option value="237630.00">18700000</option>
+                            <option value="238830.00">18800000</option>
+                            <option value="240030.00">18900000</option>
+                            <option value="241230.00">19000000</option>                                              
+                            <option value="242430.00">19100000</option>                                              
+                            <option value="243630.00">19200000</option>
+                            <option value="244830.00">19300000</option>
+                            <option value="246030.00">19400000</option>                                             
+                            <option value="247230.00">19500000</option>
+                            <option value="248430.00">19600000</option>
+                            <option value="249630.00">19700000</option>
+                            <option value="250830.00">19800000</option>
+                            <option value="252030.00">19900000</option>                                              
+                            <option value="253230.00">20000000</option>                                              
+                            <option value="254430.00">20100000</option>
+                            <option value="255630.00">20200000</option>                                              
+                            <option value="256830.00">20300000</option>                                              
+                            <option value="258030.00">20400000</option>
+                            <option value="259230.00">20500000</option>
+                            <option value="260430.00">20600000</option>                                              
+                            <option value="261630.00">20700000</option>                                              
+                            <option value="262830.00">20800000</option>
+                            <option value="264030.00">20900000</option>
+                            <option value="265230.00">21000000</option>                                              
+                            <option value="266430.00">21100000</option>                                              
+                            <option value="267630.00">21200000</option>
+                            <option value="268830.00">21300000</option>
+                            <option value="270030.00">21400000</option>                                              
+                            <option value="271230.00">21500000</option>                                              
+                            <option value="272430.00">21600000</option>
+                            <option value="273630.00">21700000</option>
+                            <option value="274830.00">21800000</option>                                              
+                            <option value="276030.00">21900000</option>                                              
+                            <option value="277230.00">22000000</option>
+                            <option value="278430.00">22100000</option>
+                            <option value="279630.00">22200000</option>                                              
+                            <option value="280830.00">22300000</option>                                              
+                            <option value="282030.00">22400000</option>
+                            <option value="283230.00">22500000</option>
+                            <option value="284430.00">22600000</option>                                              
+                            <option value="285630.00">22700000</option>                                              
+                            <option value="286830.00">22800000</option>
+                            <option value="288030.00">22900000</option>
+                            <option value="289230.00">23000000</option>                                              
+                            <option value="290430.00">23100000</option>                                              
+                            <option value="291630.00">23200000</option>
+                            <option value="292830.00">23300000</option>
+                            <option value="294030.00">23400000</option>                                              
+                            <option value="295230.00">23500000</option>                                              
+                            <option value="296430.00">23600000</option>
+                            <option value="297630.00">23700000</option>
+                            <option value="298830.00">23800000</option>                                              
+                            <option value="300000.00">23900000</option>           
+                            <option value="300000.00">Maximum Fee</option>
+                        </select>
+
+                        <div class="pt-2 d-flex">
+                            <h3>Fees: </h3> &nbsp; <h3 class="b-court-claim-value"></h3>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark">Details</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer Component Bottom []-->
     <div class="footer navbar-fixed-bottom footer-component">
     </div>
+
+    <script>
+        let b_court_claim_range = document.querySelector(".b-court-claim-range");
+        let b_court_claim_value = document.querySelector(".b-court-claim-value");
+        b_court_claim_range.onchange = function(){ 
+            b_court_claim_value.textContent = b_court_claim_range.options[b_court_claim_range.selectedIndex].value;
+        } 
+
+
+    </script>
 
 </body>
 

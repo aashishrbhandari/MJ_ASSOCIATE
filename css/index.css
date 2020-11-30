@@ -191,7 +191,14 @@ table th {
 
 
     /** New **/
-    h1 {font-size: calc(1.375rem + 1.0vw)!important;}
+    h1 { 
+        font-size: calc(1.375rem + 1.0vw)!important;
+    }
+
+    .intro-card .card-header {
+        flex-direction: column;
+    }
+
     /****/
 }
 
@@ -208,6 +215,11 @@ table th {
 
 .row {
     row-gap: 1rem;
+}
+
+.intro-card .card-header {
+    display: flex;
+    justify-content: center;
 }
 
 /*****/
