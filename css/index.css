@@ -60,7 +60,6 @@ footer .card li{
 }
 
 footer .contactus-card li {
-    padding: 0%;
     padding-top: 0.5rem;
 }
 
@@ -77,6 +76,10 @@ footer .useful-links-card ul li a{
 
 .google-maps-card {
     height: 400px;
+}
+
+.google-maps-card .card-body {
+    padding: 0;
 }
 
 
@@ -131,16 +134,21 @@ table td {
     text-align: left;
 }
 
+table:not(.imp-table) th:nth-child(2),
+table:not(.imp-table) td:nth-child(2) {
+    text-align: right;
+}
+
 table th {
     text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
-    table {
+    table.imp-table {
         border: 0;
     }
 
-    table thead {
+    table.imp-table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -152,34 +160,39 @@ table th {
         background-color: #000000;
     }
 
-    table tr {
+    table.imp-table tr {
         border-bottom: 3px solid #ddd;
         display: block;
         margin-bottom: .625em;
     }
 
-    table td {
+    table.imp-table td {
         border-bottom: 1px solid #ddd;
         display: block;
         text-align: right;
     }
 
-    table tbody tr td:first-child {
+    table.imp-table tbody tr td:first-child {
         text-align: center;
         font-weight: bold;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
     }
 
-    table td::before {
+    table.imp-table td::before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
     }
 
-    table td:last-child {
+    table.imp-table td:last-child {
         border-bottom: 0;
     }
+
+
+    /** New **/
+    h1 {font-size: calc(1.375rem + 1.0vw)!important;}
+    /****/
 }
 
 
@@ -187,6 +200,14 @@ table th {
 
 .card-title {
     font-weight: 700!important;
+}
+
+.card, table {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.row {
+    row-gap: 1rem;
 }
 
 /*****/
@@ -199,7 +220,7 @@ table th {
 }
 
 .intro-small-cards .card:hover {
-    transform: translateY(-3%);
+    transform: translateY(-25px);
 }
 
 .whatsapp-float-btn, .whatsapp-float-btn * {
