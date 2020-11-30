@@ -221,6 +221,14 @@ table th {
     display: flex;
     justify-content: center;
 }
+.contactus-card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contactus-card a:hover {
+    font-weight: 900;
+}
 
 /*****/
 
