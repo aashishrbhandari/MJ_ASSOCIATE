@@ -230,6 +230,33 @@ table th {
     font-weight: 900;
 }
 
+/**** 4th Dec 2020 ***/
+
+.br-1 {
+    border-radius: 1rem!important;
+}
+
+.carousel-item img {
+    height: 580px!important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    padding-right: 0.5rem!important;
+    padding-left: 0.5rem!important;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 280px!important;
+    }
+}
+
+
+/*****/
+
+
 /*****/
 
 
