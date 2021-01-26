@@ -310,3 +310,30 @@ table th {
 }
 
 /****/
+
+.msg-container {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all 0.6s ease;
+    transform: translateY(-200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-close {
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 10px;
+}
