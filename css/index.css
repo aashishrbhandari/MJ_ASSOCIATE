@@ -86,7 +86,7 @@ footer .useful-links-card ul li a{
 /*** WhatsApp Button ***/
 .whatsapp-float-btn {
     position: fixed; /* Very Crucial */
-    width: 240px;
+    width: 320px;
     height: 60px;
     left: 18px; 
     bottom: 40px;
@@ -241,6 +241,29 @@ table th {
     object-fit: cover;
     object-position: center;
 }
+/*** Making Carousel Arrow Round **/
+.carousel-control-prev, .carousel-control-next {
+    background-color: #222;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 48%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+    border-width: 4px;
+    background-color: #3d3d3d;
+}
+
+.carousel-control-next {
+    right: -8px;
+}
+.carousel-control-prev {
+    left: -8px;
+}
+
+/*** Making Carousel Arrow Round **/
 
 .container {
     padding-right: 0.5rem!important;
@@ -263,15 +286,17 @@ table th {
 /** Extra Animation **/
 
 .intro-small-cards .card {
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }
 
+/* [Not Required]
 .intro-small-cards .card:hover {
     transform: translateY(-25px);
 }
+*/
 
 .whatsapp-float-btn, .whatsapp-float-btn * {
-    transition: all 0.6s ease;
+    transition: all 0.4s ease;
 }
 
 @keyframes bounce {
