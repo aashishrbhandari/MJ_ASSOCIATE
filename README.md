@@ -4,4 +4,4 @@
 
 I helped Company *MJ & Associates* To Built their Online Presence.
 Their Requirement was Simple.
-They Required a Statis website which could Show their Work Online.
+They Required a Static website which could show their Work Online.
