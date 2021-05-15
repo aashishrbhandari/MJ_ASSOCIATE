@@ -7,9 +7,10 @@ body {
     padding-bottom: 75px;
 }
 
-.navbar-nav > li:hover{
-    /*font-weight: bold;*/
-    /*border-bottom: solid 3px black;*/
+@media (max-width: 768px) {
+    nav {
+        position: relative!important;
+    }
 }
 
 /** Removing Extra Spaces in NavBar */
@@ -25,7 +26,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-
 
 .image-slider-component {
     height: 40%;
@@ -383,3 +383,12 @@ a.nav-link:hover {
     text-underline-position: under; 
     text-decoration: underline;
 }
+
+
+.dropdown-large{ padding:1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-large{min-width:500px;}
+}	
+/* ============ desktop view .end// ============ */

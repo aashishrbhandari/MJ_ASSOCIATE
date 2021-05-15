@@ -8,16 +8,22 @@ async function load_footer() {
     document.querySelector("div.footer-component").innerHTML = await (await fetch('/footer.html')).text();
 
     let disclaimer_modal = document.querySelector(".disclaimer-modal");
-    let disclaimer_modal_section = new bootstrap.Modal(disclaimer_modal, {
-        keyboard: false,
-        backdrop: 'static'
-    })
 
-    /*** A Very Basic Way [Testing] */
-    if (localStorage.getItem("Visited")) {
-        console.log("Visited No Need to Show Modal!!")
-    } else {
-        disclaimer_modal_section.show();
+    if (disclaimer_modal) {
+
+        console.log("Disclaimer Modal....");
+
+        let disclaimer_modal_section = new bootstrap.Modal(disclaimer_modal, {
+            keyboard: false,
+            backdrop: 'static'
+        })
+
+        /*** A Very Basic Way [Testing] */
+        if (localStorage.getItem("Visited")) {
+            console.log("Visited No Need to Show Modal!!")
+        } else {
+            disclaimer_modal_section.show();
+        }
     }
 
 }
@@ -69,3 +75,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // DOMContentLoaded  end
 
+document.addEventListener("DOMContentLoaded", function () {
+    /////// Prevent closing from click inside dropdown
+    document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    })
+});
