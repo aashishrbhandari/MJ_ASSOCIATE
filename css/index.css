@@ -399,3 +399,7 @@ a.nav-link:hover {
 .dropdown-item {
     padding: .25rem 0.75rem;
 }
+
+.modal-content {
+    border-radius: 1rem;
+}
