@@ -1,5 +1,6 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  /*font-family: "Source Sans Pro", sans-serif;*/
+  font-family: 'Maven Pro', "Source Sans Pro", sans-serif;
 }
 
 /** Done So that the Other Content are not overlapped due to Navbar [To be Fixed] */
@@ -11,6 +12,10 @@ body {
     nav {
         position: relative!important;
     }
+
+    .navbar-component {
+        padding-bottom: 10px;
+    }
 }
 
 /** Removing Extra Spaces in NavBar */
@@ -21,10 +26,10 @@ body {
     font-size: 0;
 }
 
-/** Removing Extra Spaces in NavBar */
-.navbar {
-    padding-top: 0;
-    padding-bottom: 0;
+.company-logo {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .image-slider-component {
@@ -36,6 +41,10 @@ body {
     border: solid 1px black;
 }
 */
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #212529;
+}
 
 /** Cursor on UseFul Links */
 .useful-link-list li {
@@ -54,9 +63,9 @@ footer .card {
     border: none;
 }
 
-footer .card li{
+footer .card li {
     border: none;
-    background-color: #f8f9fa!important;
+    text-align: left;
 }
 
 footer .contactus-card li {
@@ -208,11 +217,18 @@ table th {
     font-weight: 700!important;
 }
 
-.card, table {
+.card {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     border: none!important;
     border-top: 1px solid rgba(0,0,0,.125)!important;
     border-radius: 0!important;
+    user-select: none;
+}
+
+table {
+    border: none!important;
+    border-radius: 0!important;
+    user-select: none;
 }
 
 .row {
@@ -345,50 +361,37 @@ table th {
 
 /** Carousel Custom CSS Ends **/
 
-
 .b-none {
     border: none!important;
 }
 
-
-/***
- * For MultiLevel DropDown in BooStrap v5
-*/
-
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-	.dropdown-menu li{ position: relative; 	}
-	.nav-item .submenu{ 
-		display: none;
-		position: absolute;
-		left:100%; top:-7px;
-	}
-	.nav-item .submenu-left{ 
-		right:100%; left:auto;
-	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
-	.dropdown-menu > li:hover > .submenu{ display: block; }
-}	
-/* ============ desktop view .end// ============ */
-
-/* ============ small devices ============ */
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu{
-      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
-  }
-}	
-/* ============ small devices .end// ============ */
-
-a.nav-link:hover {
-    text-underline-position: under; 
-    text-decoration: underline;
+a.nav-link, a.dropdown-item {
+    color: rgba(0, 0, 0, 1)!important;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
+a.nav-link:hover {
+    color: rgba(0,0,0,.55)!important;
+}
 
-.dropdown-large{ padding:1rem; }
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #212529;
+    color: #fff!important;
+}
 
-/* ============ desktop view ============ */
+.dropdown-large { padding:1rem; }
+
+/**/
 @media all and (min-width: 992px) {
-    .dropdown-large{min-width:500px;}
-}	
-/* ============ desktop view .end// ============ */
+    .dropdown-large{ 
+        min-width: 640px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropdown-large > .row {
+        flex-direction: column!important;
+    }
+}
+/**/

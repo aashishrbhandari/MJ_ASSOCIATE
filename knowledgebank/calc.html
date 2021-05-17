@@ -41,7 +41,7 @@
 
         <div class="card mb-3">
             <div class="card-header text-center bg-transparent">
-                <h2>BOMBAY COURT FEES CALCULATOR</h2>
+                <h2>Law Calculator</h2>
             </div>
         </div>
 
@@ -452,6 +452,11 @@
                             <h3>Fees (₹): </h3> &nbsp; <h3 class="b-court-claim-value"></h3>
                         </div>
 
+                        <div class="pt-4">
+                            <h4>For Total Claim Value: <span class="law-claim-value">0</span> </h4>
+                            <h4>Fees Calulated is (₹): <span class="law-claim-fees">0</span> </h4>
+                        </div>
+
                         <!--<a href="#" class="btn btn-outline-dark">Details</a>-->
 
                     </div>
@@ -469,10 +474,13 @@
     <script>
         let b_court_claim_range = document.querySelector(".b-court-claim-range");
         let b_court_claim_value = document.querySelector(".b-court-claim-value");
-        b_court_claim_range.onchange = function(){ 
-            b_court_claim_value.textContent = b_court_claim_range.options[b_court_claim_range.selectedIndex].value;
+        b_court_claim_range.onchange = function() { 
+            let claim_value = b_court_claim_range.options[b_court_claim_range.selectedIndex].innerText;
+            let claim_fees = b_court_claim_range.options[b_court_claim_range.selectedIndex].value;
+            document.querySelector(".law-claim-value").textContent = claim_value;
+            document.querySelector(".law-claim-fees").textContent = claim_fees;
+            b_court_claim_value.textContent = claim_fees;
         } 
-
 
     </script>
 
