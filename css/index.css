@@ -385,7 +385,7 @@ a.nav-link:hover {
 /**/
 @media all and (min-width: 992px) {
     .dropdown-large{ 
-        min-width: 640px;
+        min-width: 675px;
     }
 }
 
@@ -395,3 +395,7 @@ a.nav-link:hover {
     }
 }
 /**/
+
+.dropdown-item {
+    padding: .25rem 0.75rem;
+}
